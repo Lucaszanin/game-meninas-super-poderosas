@@ -1,0 +1,118 @@
+header h1 {
+    font-weight: 900;
+    font-size: 8rem;
+    text-align: center;
+    padding: 2rem;
+    color: rgb(126, 38, 97);
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    background: url(../assets/fundo.gif) center center no-repeat;
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+}
+
+
+.content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.cards {
+    display: flex;
+    flex: 1;
+    width: 50rem;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.card {
+    display: flex;
+    box-shadow: 9px 10px 19px 10px #000000;
+    width: 15rem;
+    position: relative;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-inline: .5rem;
+}
+
+.card h2 {
+    font-size: 2rem;
+    color: rgb(0, 255, 76);
+    position: absolute;
+    margin: .4rem;
+    font-weight: 600;
+}
+
+.card img {
+    border-radius: 10px;
+}
+
+.card:hover:not(.active){
+    transform: scale(1.10);
+    border: 0.4rem solid rgb(83, 221, 41);
+}
+
+.player-2 img ,
+.player-1 img {
+    width: 45rem;
+    height: 50rem;
+}
+
+.player-2  h3,
+.player-1 h3{
+    color: #FFF;
+    font-size: 2rem;
+    font-weight: 900;
+    text-align: center;
+}
+
+/* .player-1,
+.player-2 {
+    opacity: 0;
+} */
+
+.name {
+    background-color: rgba(102, 255, 0, 0.676);
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    box-shadow: 9px 14px 24px 13px rgba(0,0,0,0.73);
+    border-radius: 20px;
+}
+
+.name-2 {
+    background-color: rgb(228, 34, 27);
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    box-shadow: 9px 14px 24px 13px rgba(0,0,0,0.73);
+    border-radius: 20px;
+}
+
+
+.name h3,
+.name-2 h3{
+    font-size: 5rem;
+    position: absolute;
+    bottom: .7rem;
+    color: rgb(36, 36, 36);
+}
+
+.play-2 {
+    color: rgb(228, 34, 27);
+    border: 0.6rem solid rgb(228, 34, 27);
+}
+
+.play-2 h2{
+    color: rgb(228, 34, 27);
+    font-size: 2.5rem;
+}
